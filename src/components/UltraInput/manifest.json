@@ -1,0 +1,362 @@
+{
+  "displayName": "Ultra Input",
+  "defaultWidth": 343,
+  "defaultHeight": 40,
+  "components": "./index.js",
+  "icon": "./ultra-input-thumbnail.png",
+  "props": [
+    {
+      "name": "defaultValue",
+      "displayName": "Default Text",
+      "type": "text",
+      "role": "formValue",
+      "styles": {
+        "fontSize": 16,
+        "fontWeight": 500,
+        "fontFamily": "@body",
+        "color": "@text"
+      }
+    },
+    {
+      "name": "placeholder",
+      "displayName": "Placeholder",
+      "type": "text",
+      "default": "Validate Input",
+      "styles": {
+        "color": "#9e9e9e"
+      }
+    },
+    {
+      "name": "inputMode",
+      "displayName": "Input Mode",
+      "type": "text",
+      "default": "none",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "none", "value": "none" },
+          { "label": "text", "value": "text" },
+          { "label": "decimal", "value": "decimal" },
+          { "label": "numeric", "value": "numeric" },
+          { "label": "tel", "value": "tel" },
+          { "label": "search", "value": "search" },
+          { "label": "email", "value": "email" },
+          { "label": "url", "value": "url" }
+        ]
+      }
+    },       
+    {
+      "name": "required",
+      "displayName": "Required",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "autoCapitalize",
+      "displayName": "Auto Capitalize",
+      "type": "text",
+      "default": "sentences",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "characters", "value": "characters" },
+          { "label": "words", "value": "words" },
+          { "label": "sentences", "value": "sentences" },
+          { "label": "none", "value": "none" }
+        ]
+      }
+    },    
+    {
+      "name": "autoCorrect",
+      "displayName": "Auto Correct",
+      "type": "boolean",
+      "default": false
+    },    
+    {
+      "name": "secureTextEntry",
+      "displayName": "Secure Text Entry",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "textAlign",
+      "displayName": "Text Align",
+      "type": "text",
+      "default": "left",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "left", "value": "left" },
+          { "label": "center", "value": "center" },
+          { "label": "right", "value": "right" }
+        ]
+      }
+    }    
+  ],
+  "childComponents": [
+    {
+      "name": "enhancements",
+      "displayName": "Enhancements",
+      "props": [
+        {
+          "name": "autoFocus",
+          "displayName": "Auto Focus",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "editable",
+          "displayName": "Editable",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "multiLine",
+          "displayName": "Multi-Line",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "height",
+          "displayName": "Height",
+          "type": "number",
+          "default": 40,
+          "enabled": {
+            "multiLine": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "style",
+      "displayName": "Style",
+      "props": [
+        {
+          "name": "backgroundColor",
+          "displayName": "Background color",
+          "type": "color",
+          "default": "#f5f5f5"
+        },
+        {
+          "name": "padding",
+          "displayName": "Padding",
+          "type": "number",
+          "default": 4,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 20
+          }
+        },
+        {
+          "name": "border1",
+          "displayName": "Border 1 (Outside)",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "borderColor1",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#2962ff",
+          "enabled": {
+            "border1": true
+          }
+        },        
+        {
+          "name": "borderWidth1",
+          "displayName": "Width",
+          "type": "number",
+          "default": 1,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          },
+          "enabled": {
+            "border1": true
+          }
+        },
+        {
+          "name": "borderRadius1",
+          "displayName": "Rounding",
+          "type": "number",
+          "default": 4,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 20
+          },
+          "enabled": {
+            "border1": true
+          }
+        },
+        {
+          "name": "border2",
+          "displayName": "Border 2 (Middle)",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "borderColor2",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#ffffff",
+          "enabled": {
+            "border2": true
+          }
+        },
+        {
+          "name": "borderWidth2",
+          "displayName": "Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 4
+          },
+          "enabled": {
+            "border2": true
+          }
+        },
+        {
+          "name": "border3",
+          "displayName": "Border 3 (Inside)",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "borderColor3",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#00c853",
+          "enabled": {
+            "border3": true
+          }
+        },
+        {
+          "name": "borderWidth3",
+          "displayName": "Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 4
+          },
+          "enabled": {
+            "border3": true
+          }
+        },
+        {
+          "name": "borderRadius3",
+          "displayName": "Rounding",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 20
+          },
+          "enabled": {
+            "border3": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "validation",
+      "displayName": "Validation",
+      "props": [
+        {
+          "name": "pattern",
+          "displayName": "Pattern",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "name": "validBorderColor",
+          "displayName": "Success Color",
+          "type": "color",
+          "default": "#00c853"
+        },
+        {
+          "name": "errorBorderColor",
+          "displayName": "Error Color",
+          "type": "color",
+          "default": "#d50000"
+        }        
+      ]
+    },
+    {
+      "name": "mobile",
+      "displayName": "Mobile",
+      "props": [
+        {
+          "name": "keyboardType",
+          "displayName": "Keyboard Type",
+          "type": "text",
+          "default": "default",
+          "control": {
+            "type": "menu",
+            "options": [
+              { "label": "default", "value": "default" },
+              { "label": "number-pad", "value": "number-pad" },
+              { "label": "decimal-pad", "value": "decimal-pad" },
+              { "label": "numeric", "value": "numeric" },
+              { "label": "email-address", "value": "email-address" },
+              { "label": "phone-pad", "value": "phone-pad" },
+              { "label": "url", "value": "url" }
+            ]
+          }
+        },
+        {
+          "name": "returnKeyType",
+          "displayName": "Return Key Type",
+          "type": "text",
+          "control": {
+            "type": "menu",
+            "options": [
+              { "label": "done", "value": "done" },
+              { "label": "go", "value": "go" },
+              { "label": "next", "value": "next" },
+              { "label": "search", "value": "search" },
+              { "label": "send", "value": "send" }
+            ]
+          }
+        },
+        {
+          "name": "autoComplete",
+          "displayName": "Auto Complete",
+          "type": "text",
+          "default": "off",
+          "control": {
+            "type": "menu",
+            "options": [
+              { "label": "additional-name", "value": "additional-name" },
+              { "label": "address-line1", "value": "address-line1" },
+              { "label": "address-line2", "value": "address-line2" },
+              { "label": "cc-number", "value": "cc-number" },
+              { "label": "country", "value": "country" },
+              { "label": "current-password", "value": "current-password" },
+              { "label": "email", "value": "email" },
+              { "label": "family-name", "value": "family-name" },
+              { "label": "given-name", "value": "given-name" },
+              { "label": "honorific-prefix", "value": "honorific-prefix" },
+              { "label": "honorific-suffix", "value": "honorific-suffix" },
+              { "label": "name", "value": "name" },
+              { "label": "new-password", "value": "new-password" },
+              { "label": "off", "value": "off" },
+              { "label": "one-time-code", "value": "one-time-code" },
+              { "label": "postal-code", "value": "postal-code" },
+              { "label": "street-address", "value": "street-address" },
+              { "label": "tel", "value": "tel" },
+              { "label": "username", "value": "username" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

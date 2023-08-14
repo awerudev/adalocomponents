@@ -1,0 +1,16 @@
+{
+  "author": "Alex Long",
+  "displayName": "Alex Components",
+  "description": "Alex Input and Select",
+  "components": [
+    {
+      "name": "UltraInput",
+      "manifest": "./src/components/UltraInput/manifest.json"
+    },
+    {
+      "name": "UltraDropDown",
+      "manifest": "./src/components/UltraDropDown/manifest.json"
+    }
+  ],
+  "logo": "./example-logo.png"
+}

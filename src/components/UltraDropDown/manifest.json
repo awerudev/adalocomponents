@@ -1,0 +1,182 @@
+{
+  "displayName": "Ultra Dropdown",
+  "defaultWidth": 343,
+  "defaultHeight": 40,
+  "components": "./index.js",
+  "icon": "./ultra-dropdown-thumbnail.png",
+  "props": [
+    {
+      "name": "placeholder",
+      "displayName": "Placeholder",
+      "type": "text",
+      "default": "Select...",
+      "styles": {
+        "fontSize": 16,
+        "fontWeight": 500,
+        "fontFamily": "@body",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "name": "listItems",
+      "displayName": "What is a list of?",
+      "type": "list"
+    },
+    {
+      "name": "backgroundColor",
+      "displayName": "Background color",
+      "type": "color",
+      "default": "#00c853"
+    },
+    {
+      "name": "color",
+      "displayName": "Color",
+      "type": "color",
+      "default": "#ffffff"
+    },
+    {
+      "name": "fontSize",
+      "displayName": "Font Size",
+      "type": "number",
+      "default": 16,
+      "control": {
+        "type": "slider",
+        "min": 8,
+        "max": 32
+      }
+    },
+    {
+      "name": "fontWeight",
+      "displayName": "Font Weight",
+      "type": "text",
+      "default": "700",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "Thin", "value": "100" },
+          { "label": "Extra Light", "value": "200" },
+          { "label": "Light", "value": "300" },
+          { "label": "Normal", "value": "400" },
+          { "label": "Medium", "value": "500" },
+          { "label": "Semi Bold", "value": "600" },
+          { "label": "Bold", "value": "700" },
+          { "label": "Extra Bold", "value": "800" },
+          { "label": "Black", "value": "900" }
+        ]
+      }
+    },
+    {
+      "name": "textAlign",
+      "displayName": "Text Align",
+      "type": "text",
+      "default": "center",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "Left", "value": "left" },
+          { "label": "Center", "value": "center" },
+          { "label": "Right", "value": "right" }
+        ]
+      }
+    },
+    {
+      "name": "disabled",
+      "displayName": "Disabled",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "border1",
+      "displayName": "Border 1 (Outside)",
+      "props": [
+        {
+          "name": "borderColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#00c853"
+        },
+        {
+          "name": "borderWidth",
+          "displayName": "Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 4
+          }
+        },
+        {
+          "name": "borderRadius",
+          "displayName": "Rounding",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "border2",
+      "displayName": "Border 2 (Middle)",
+      "props": [
+        {
+          "name": "borderColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#ffffff"
+        },
+        {
+          "name": "borderWidth",
+          "displayName": "Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "border3",
+      "displayName": "Border 3 (Inside)",
+      "props": [
+        {
+          "name": "borderColor",
+          "displayName": "Color",
+          "type": "color",
+          "default": "#00c853"
+        },
+        {
+          "name": "borderWidth",
+          "displayName": "Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 4
+          }
+        },
+        {
+          "name": "borderRadius",
+          "displayName": "Rounding",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 20
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "alexlong-components",
+  "description": "Alex input and drop down",
+  "version": "1.1.16",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.57",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  }
+}
